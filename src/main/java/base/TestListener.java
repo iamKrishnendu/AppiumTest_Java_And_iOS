@@ -3,6 +3,7 @@ package base;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.Parameters;
 
 import java.net.MalformedURLException;
 
@@ -11,7 +12,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         AppiumServer.Start();
-
+        //System.out.println("From parameter attr" + platformName);
         String Platform = result.getMethod().getXmlTest().getLocalParameters().get("platform");
 
         if(Platform.contains("android"))

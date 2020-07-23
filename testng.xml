@@ -10,7 +10,7 @@
         <classes>
             <!--class name="android.tc.Verify_SaveContact" /-->
             <!--class name="android.tc.PerformScroll" /-->
-            <class name="android.tc.Verify_SaveContact"/>
+            <class name="findBy.tc.EchoTest1"/>
         </classes>
     </test>
 </suite>
